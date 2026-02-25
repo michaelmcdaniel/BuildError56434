@@ -10,8 +10,4 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\NugetPackage\NugetPackage.csproj" />
-  </ItemGroup>
-
 </Project>

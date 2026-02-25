@@ -7,6 +7,7 @@ builder.Logging.ClearProviders();
 builder.Logging.AddCustomLogger(); // see below class CustomLoggerExtension
 
 var app = builder.Build();
+app.UseStaticFiles();
 
 app.MapGet("/", async (r) => { 
 	r.RequestServices.GetService<ILoggerFactory>()!.CreateLogger("")!.LogWarning("Look Mom! -> Debug Window!");
